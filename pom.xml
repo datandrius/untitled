@@ -55,6 +55,31 @@
                     </execution>
                 </executions>
             </plugin>    <!-- assembly -->
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.16.7</version>
+                <configuration>
+                    <images>
+                        <image>
+                            <name>halo-maven:${project.version}</name>
+                            <build>
+                                <dockerFileDir>${project.basedir}</dockerFileDir>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+            </plugin>
+
 
         </plugins>
     </build>
