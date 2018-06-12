@@ -7,5 +7,6 @@ public class Hello {
     System.out.println("Fourth line");
     System.out.println("Fifth line");
     System.out.println("Sixth line");
+    System.out.println("seventh line");
   }
 }
