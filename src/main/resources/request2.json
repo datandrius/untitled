@@ -1,0 +1,35 @@
+{
+  "id": 0,
+  "drops": [
+    {
+      "timeSlot": {
+        "start": "2018-05-30T14:00:00Z",
+        "end": "2018-05-30T15:00:00Z"
+      },
+      "toLocation": {
+        "latitude": 51.5033,
+        "longitude": 0.1195
+      },
+      "serviceTime": 0,
+      "constraints": {
+        "weight": 1000
+      }
+    }
+  ],
+  "picks": [
+    {
+      "timeSlot": {
+        "start": "2018-05-30T14:00:00Z",
+        "end": "2018-05-30T15:00:00Z"
+      },
+      "toLocation": {
+        "latitude": 51.5033,
+        "longitude": 0.1195
+      },
+      "serviceTime": 0,
+      "constraints": {
+        "weight": 1000
+      }
+    }
+  ]
+}
