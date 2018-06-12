@@ -1,0 +1,21 @@
+{
+  "id": "bristol4",
+  "location": {
+    "latitude": 51.4527,
+    "longitude": -2.5891
+  },
+  "timezone": "Europe/Vilnius",
+  "businessId": 1,
+  "preferences": {
+    "constraints": [
+      "altitude"
+    ],
+    "customDetails": [
+      "address",
+      "phone"
+    ],
+    "hasPicks": true,
+    "hasDrivers": true,
+    "slotsConfig": []
+  }
+}
