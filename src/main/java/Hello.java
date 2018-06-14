@@ -3,7 +3,7 @@ public class Hello {
   public static void main(String... args) {
     System.out.println("First line on github");
     System.out.println("Second line on github");
-    System.out.println("Third line");
+    System.out.println("Third line on github");
     System.out.println("Third line v2");
     System.out.println("Fourth line");
     System.out.println("Fifth line");
