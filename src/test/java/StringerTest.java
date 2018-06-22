@@ -23,6 +23,7 @@ public class StringerTest {
   @Test
   public void privateMethod() throws Exception {
     assertThat(m.invoke(stringer, "vienas", "du"), is("vienas - du"));
+    assertThat(m.invoke(stringer, "trys", "keturi"), is("trys - keturi"));
   }
 
   @Test
