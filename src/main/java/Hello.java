@@ -12,5 +12,10 @@ public class Hello {
     System.out.println("eighth line");
     System.out.println("feature line 1");
     System.out.println("feature line 2 version2");
+    System.out.println(concatLines("pirma", "antra"));
+  }
+
+  public static String concatLines(String a, String b) {
+    return a + " " + b;
   }
 }
