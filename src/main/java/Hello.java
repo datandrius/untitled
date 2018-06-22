@@ -5,5 +5,6 @@ public class Hello {
     System.out.println(new Stringer().concatLines("1", "1"));
     System.out.println(new Stringer().concatLines("2", "2"));
     System.out.println(new Stringer().concatLines("4", "4"));
+    System.out.println(new Stringer().concatLines("5", "5"));
   }
 }
