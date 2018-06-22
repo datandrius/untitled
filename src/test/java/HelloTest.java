@@ -1,5 +1,9 @@
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
+import java.lang.reflect.Method;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -7,9 +11,26 @@ import org.junit.Test;
  */
 public class HelloTest {
 
+  private Stringer stringer = new Stringer();
+  private Method m;
+//  private DriverShift shiftA;
+//  private DriverShift shiftB;
+
+  @Before
+  public void setUp() throws Exception {
+    m = stringer.getClass()
+        .getDeclaredMethod("concatMinusLines", String.class, String.class);
+    m.setAccessible(true);
+  }
+
   @Test
-  public void testCarList() {
-    assertEquals("vienas du", Hello.concatLines("vienas", "du"));
+  public void privateMethod() throws Exception {
+    assertThat(m.invoke(stringer, "vienas", "du"), is("vienas - du"));
+  }
+
+  @Test
+  public void publicMethod() {
+    assertEquals("vienas - du", new Stringer().concatLines("vienas", "du"));
   }
 
 }
