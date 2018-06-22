@@ -28,6 +28,7 @@ public class StringerTest {
   @Test
   public void publicMethod() {
     assertEquals("vienas - du", new Stringer().concatLines("vienas", "du"));
+    assertEquals("trys - keturi", new Stringer().concatLines("trys", "keturi"));
   }
 
 
