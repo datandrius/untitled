@@ -21,6 +21,14 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>    <!-- junit -->
+
+    <!-- reading yml config file -->
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>1.21</version>
+    </dependency>
+
     <dependency>
       <groupId>com.github.docker-java</groupId>
       <artifactId>docker-java</artifactId>
